@@ -37,7 +37,7 @@ public class SqlQueries {
     //Name column containing name of the department "depname".
     //Name column containing employee amount "staff_size".
     //language=HSQLDB
-    String select08 = "select d.name as depname, count(d.name) as staff_size from employee e join department d on e.department=d.id group by depname";
+    String select08 = "select d.name as depname, count(d.name) as staff_size from employee e join department d on e.department=d.id group by  depname";
 
     //Select all departments and values of total and average salary per department
     //Name column containing name of the department "depname".
