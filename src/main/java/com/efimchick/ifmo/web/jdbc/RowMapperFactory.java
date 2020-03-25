@@ -24,6 +24,7 @@ public class RowMapperFactory {
                 e.printStackTrace();
             }
             return null;
+
         };
     }
 }
