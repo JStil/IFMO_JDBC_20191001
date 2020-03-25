@@ -16,9 +16,7 @@ public class RowMapperFactory {
                 return new Employee(
                     new BigInteger(RS.getString("id")),
                     new FullName(RS.getString("firstname"), RS.getString("lastname"), RS.getString("middlename")),
-                    Position.valueOf(RS.getString("position")),
-                    LocalDate.parse(RS.getString("hiredate")),
-                    RS.getBigDecimal("salary")
+                    Position.valueOf(RS.getString("position")), LocalDate.parse(RS.getString("hiredate")), RS.getBigDecimal("salary")
                 );
             } catch (SQLException e) {
                 e.printStackTrace();
