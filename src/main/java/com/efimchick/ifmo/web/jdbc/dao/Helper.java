@@ -1,6 +1,5 @@
 package com.efimchick.ifmo.web.jdbc.dao;
 
-import com.efimchick.ifmo.web.jdbc.ConnectionSource;
 import com.efimchick.ifmo.web.jdbc.domain.Department;
 import com.efimchick.ifmo.web.jdbc.domain.Employee;
 import com.efimchick.ifmo.web.jdbc.domain.FullName;
@@ -11,7 +10,6 @@ import java.math.BigInteger;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.time.LocalDate;
-import java.util.List;
 
 public class Helper {
     public static Employee getEmp(ResultSet RS) throws SQLException {
