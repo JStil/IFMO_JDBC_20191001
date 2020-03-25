@@ -32,10 +32,7 @@ public class SetMapperFactory {
 
     public Employee getEmployeeOrManager(ResultSet RS, boolean empOverMan) throws SQLException{
         if (empOverMan) {
-            boolean manager = true;
-            if (RS.getInt("manager") == 0) {
-                manager = false;
-            }
+            boolean manager = RS.getInt("manager") != 0;
             return new Employee(
                     new BigInteger(RS.getString("id")),
                     new FullName(RS.getString("firstname"), RS.getString("lastname"), RS.getString("middlename")),
